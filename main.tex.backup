@@ -1,0 +1,191 @@
+% First Version: 1389.10.12
+% Current Version: 1396.12.14
+% الگوی این پایان‌نامه مورد تایید دانشگاه صنعتی اصفهان قرار گرفته است و فارغ از الگوهای دانشکده‌ها مورد پذیرش کتابخانه مرکزی می باشد
+% لطفا هر نوع باگ را در ساختار این پایان‌نامه به mersadkhan@gmail.com ارسال کنید و از آخرین نسخه این پایان‌نامه که روی سایت دانشکده فیزیک در بخش فرمها قرار می گیرد اطمینان حاصل کنید
+% لطفا قبل از شروع با این این استایل ابتدا فونت‌هایی را که در پوشه fonts قرار داده شده است نصب کنید. این استایل به تایید دانشکده فیزیک رسیده است و استاندارد می باشد
+%این مجموعه ابتدا توسط دکتر رامین جوادی در دانشکده ریاضی دانشگاه صنعتی اصفهان نوشته و گردآوری شد. استفاده از فونت‌های خانواده X و پاره‌ای تصحیحات دیگر توسط اینجانب مرصاد مستقیمی از دانشکده فیزیک دانشگاه صنعتی اصفهان به آن اضافه شد. لازم به ذکر است که به زودی با انتشار فونت متن باز و استاندارد فارسی  (http://pfont.ir/)و با توجه به تصمیمات آقای وفا خلیقی توسعه دهنده زیپرشین استفاده از تمامی فونت های غیر آزاد ممنوع  خواهد شد.ال بته سعی شد تا با وارد کردن برخی قسمت های پایان‌نامه اینجانب به آن این مجموعه برای دانشجویان دانشکده فیزیک استاندارد‌سازی شود.ابتدای کار با این مجموعه فونت های مربوطه را تماماً نصب کنید. فونت ها را در پوشه ای برای شما قرار داده ام می توانید خود نیز این مجموعه را تغییر داده و بهبود ببخشید.خواندن پیشفرض هایی که در وبگاه  http://parsilatex.com/site/  در بخش مثالهای زیپرشین است را به شما پیشنهاد می‌کنم. توجه داشته باشید که در این فایل خام لاتک سعی بر تناسب با استاندارهای فارسی و همینطور ارتقاء فرم  دانشگاه شده است و از این رو سر تیترهای فصول  در سمت راست قرار گرفته و بالای هر صفحه عنوان هر فصل آمده است تا خوانندگان پایان ‌نامه شما راحت تر به مطالب دسترسی داشته باشند.در فصل اول قسمتی از ابتدای پایان نامه اینجانب و در فصل دوم نمونه ای برای استفاده از واژه نامه و همینطور فهرست اختصارات و چگونگی زیرنویس شدن همزمان با در ج در فهرست آمده است.یک فایل xindy.sh نیز در بسته وجود دارد تا کاربران سیستم عامل گنو/لینوکس با اجرای آن ویا با درج تصحیحات مندرج درآن در ابزار نوشتاری خود(شخصا از kileاستفاده کرده ام) بتوانند فهرست واژگان و اختصارات را به روز کنند. برای این دسته از کاربران لازم است که از نصبxindy  اطمینان حاصل کنند.(اگر کار نکرد یعنی نصب نیست!)با استفاده از استایل ieeetr فارسی که آقای امین‌طوسی  و دیگران زحمت آن را کشیده بودند استایلی جدید با نام iut-fa را ساخته ام که doi و url را هم دارد. برای اینکه ببینید چگونه doi یک مقاله را وارد کرده و به آن لینک داده ام فایل biblography من را ببینید.البته اگر تمام مراجع شما لاتین است می‌توانید از همان فرمت استاندارد و استایل urlplain استفاده کنید که خود به خود doi هارا وارد می کند.برای وارد کردن مراجع به زبان فارسی باید  یک سویچ اضافه با نام languageدر  مرجعتان مشخص کند که زبانpersian است. د انشجویان دکترا یا آنهایی که بیش از یک استاد راهنما دارند فایل thesis.cls را نگاه کنند  ممکن است بطلبد در آن فایل تغییراتی بدهید(البته امیدوارم متوجه بشوید چه تغییراتی کمی حوصله و دانش نیاز دارد لذا بد نیست پشتیبانی بگیرید.) این فرمت به تایید دانشکده فیزیک دانشگاه صنعتی اصفهان رسیده است و شما می توانید بدون نگرانی از آن استفاده کنید.  
+% در نسخه جدید امکان اضافه نمودن استاد داخلی و خارجی و چند استاد راهنما اضافه شد و مشکلات زیرنویس‌ها و همچنین جابه جایی کپشن تصاویر حل شد
+\documentclass[a4paper,11pt,oneside,openany]{iut-thesis}
+% برای چاپ پایان‌نامه به صورت دو رو خط فوق را کامنت و خط زیر را فعال کنید همچنین تغییرات لازم برای هدر‌ها را نیز انجام دهید که در ادامه به آن اشاره شده است
+%  \documentclass[a4paper,11pt,twoside,openany]{thesis}
+\usepackage{amsthm,amssymb,amsmath}% فونت‌ها، نمادها و محیط‌های ams
+\usepackage{setspace,xargs}
+\usepackage{array}%آرایه‌های ریاضی
+\usepackage{verbatim}%می‌توان محیط های جدید را با این بسته تعریف نمود
+\usepackage{verbatimbox}
+\usepackage{indentfirst} %جهت ایجاد تورفتگی در اول پاراگراف
+\usepackage{xfrac}
+% بسته زیر برای جداول است
+\usepackage{tabulary}
+\usepackage{framed} 
+% بسته زیر برای تنظیمات هدر صفحات است
+\usepackage{fancyhdr}
+% تنظیم Heading
+\usepackage{longtable}
+% پکیج برای جداول طولانی
+\usepackage{enumitem}
+%===============================================footnote=====================================
+%بسته و تنظیمات زیر زیرنویس هر صفحه را از یک شروع می کند.
+\usepackage{zref-perpage}
+\zmakeperpage{footnote}
+\usepackage{remreset}
+\makeatletter
+\@removefromreset{footnote}{chapter}
+\makeatother
+%======================================================================================
+\usepackage{tikz,tikz-cd}% برای رسم اشکال و یا نمودارها استفاده می شود. این بسته یکی از مهمترین بسته‌های لاتک است
+\usetikzlibrary{shapes.geometric, arrows,patterns}
+
+\usepackage [pagebackref=true, colorlinks, linkcolor=blue, citecolor=magenta, urlcolor=cyan] {hyperref}
+% چنانچه قصد پرینت گرفتن نوشته خود را دارید، خط بالا را غیرفعال و  از دستور زیر استفاده کنید. در ضمن pagebackref برای نشان دادن شماره صفحه ارجاعات مراجع در بخش bibliography است.
+% \usepackage [pagebackref=false, colorlinks, linkcolor=black, citecolor=black, urlcolor=black] {hyperref}
+\hypersetup{
+pdftitle={},
+pdfauthor={Mersad Mostaghimi},
+pdfsubject={MS.c Thesis},
+pdfkeywords={keywords},
+pdfdirection={R2L}
+}
+\usepackage{afterpage}
+\usepackage{bookmark}%برای فعال شدن لینک‌ها از این بسته استفاده می شود
+% پکیج زیر رنگ و گرافیک و تعریف پوشه عکس‌ها
+\usepackage{graphicx,xcolor}
+
+\graphicspath{{./images/}}
+\newcommand\figwidth{0.4}
+% پکیج زیر برای اضافه کردن کدهای برنامه‌هاست
+\usepackage[procnames]{listings}
+ \usepackage{lscape}% چنانچه بخواهید صفحه ای را به صورت لندسکیپ درآورید این بسته کمک می کند
+\usepackage [a4paper, bindingoffset=-.5cm, footskip=1cm, headheight = 16pt, top=3cm, bottom=2.5cm,  right=3cm,  left=3cm ,] {geometry}% ابعاد صفحه و حاشیه‌ها
+% تنظیم ارجاعات
+\usepackage[numbers]{natbib}%این بسته برای اضافه نمودن دستورات مرجع زنی مختلف است
+% بسته زیر فهرست های  و مراجع را به فهرست مطالب اضافه می کند
+\usepackage[nottoc]{tocbibind}
+% دو بسته زیر امکان caption را برای عکس‌ها فراهم می نماید
+\usepackage[margin=10pt,font=small,labelfont=bf,labelsep=endash]{caption} 
+\usepackage[margin=10pt,font=footnotesize,labelfont=bf,labelsep=endash]{subcaption}
+\usepackage[xindy,acronym,toc]{glossaries}% اضافه کردن مراجع و نمایه به فهرست مطالب
+%بسته زیر امکان ارجاع دهی الکترونیک به مقالات را ایجاد می کند .البته باید استایل مورد استفاده در بخش مراجع دارای تابع doi باشد.استایل های iut-fa و plainnat-faاین آپشن را دارا هستند.
+\usepackage{doi}
+% خط زیر امکان نوشتن کنار عکس را می دهد
+\usepackage{sidecap}
+\sidecaptionvpos{figure}{t}
+%خط زیر برای خوانش فونت‌ها در ویندوز است.
+\usepackage[OT1,EU1]{fontenc}
+%خط زیر مراجع را از اولین فصل شماره گذاری می کند و در لیست تصاویر نشان نمی‌دهد.
+\usepackage{notoccite}
+% در مورد تقدم و تاخر وارد کردن بسته ها تنها باید به چند نکته دقت کرد:
+% الف) بسته xepersian حتما حتما باید آخرین بسته ای باشد که فراخوانی می شود
+% ب) بسته hyperref جزو آخرین بسته هایی باید باشد که فراخوانی می شود.
+% ج) بسته glossaries حتما باید بعد از hyperref فراخوانی شود. 
+%  اگر از بسته float استفاده نمی کنید caption جداول مانند تصاویر بسته به اینکه بالا نوشته شده باشند یا پایین تغییر مکان می دهند. چنانچه نیازمندید تا از بسته‌های float که در زیر آمده است استفاده کنید زیرنویس جداول همه در پایین نوشته می شود. برای اینکه زیرنویس‌ها بعد از فعالسازی بسته های float بالا یا پایین جداول نوشته شود حسب انتخاب باید قبل از table مکان را با یکی از دستورات زیر ست نمایید توجه کنید که بعد از دستورات زیر تمامی زیرنویس ها از آن به بعد مطابق با آخرین دستور اعمالی تنظیم می شوند. برای نمونه به جداول فصل چهارم نگاه کنید.
+% \usepackage{floatrow}
+% \usepackage{morefloats}
+% \floatsetup[table]{capposition=bottom}
+% \floatsetup[table]{capposition=top}
+%برای نشان دادن رد ماتریس از این عبارت تعریف شده است.می‌توانید عبارات خود را تعریف کنید.
+% خط زیر اپراتور تریس را ست می نماید
+\DeclareMathOperator{\Tr}{Tr}
+
+%%=========================================== XePersian
+%  \usepackage{xepersian}
+%اگر می‌خواهید زیرنویس ها تک ستونی شود خط فوق را  فعال کنید و دو خط زیر را غیر فعال کنید
+
+ \usepackage[extrafootnotefeatures]{xepersian}
+ \twocolumnfootnotes
+\settextfont[Scale=1.1]{Yas}
+\setdigitfont[Scale=1.1]{Yas}
+%اگر میخواهید اعداد در فرمولها لاتین باشد خط بالا را کامنت و خط پایین را فعال کنید
+% \DefaultMathsDigits
+\defpersianfont\nastaliq[Scale=2]{IranNastaliq}
+\defpersianfont\nastaliqsmal[Scale=1]{IranNastaliq}
+\defpersianfont\titr[Scale=1]{XB Titre}
+\defpersianfont\traffic[Scale=1]{XM Traffic}
+\deflatinfont\urwchl[Scale=1]{Chancery}
+%================================================settings
+\input{./settings}
+
+%واژه نامه
+\input{./chapters/dic}
+% اختصارات
+\input{./chapters/abbreviation}
+\begin{document}
+\input{./chapters/besmellah}
+\input{./chapters/firstpage}
+\input{./chapters/newmatters}
+%%================================== Acknowledgement & Abstract
+\input{./chapters/acknowledge}
+%============================================ List of Contents, Figures and Notations
+\begin{spacing}{1.7}
+\tableofcontents
+% اگر فهرست تصاویر نمی خواهید خط زیر را کامنت کنید
+\listoffigures\cleardoublepage
+\listoftables\cleardoublepage
+% % =============================
+\fancyhf{}
+\end{spacing}
+%%========================================== Chapters
+
+\XeTeXinterchartokenstate=1
+%دستوری برای اینکه کشیدگی در کلمات ایجاد شود
+\abovedisplayshortskip=10pt
+\belowdisplayshortskip=8pt
+%دستوری برای تنظیم فاصله عمودی قبل و بعد از فرمول‌ها
+%در اینجا چکیده فارسی ،مقدمه،فصول و سایر سربخش‌ها را که در فایلهای مجزا هستند وارد نموده ایم.
+\input{./chapters/abstractFa}
+\pagenumbering{arabic}\setcounter{page}{1}
+% خطوط زیر هدر‌های صفحات را تنظیم می‌کند
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\leftmark}
+\lhead{\thepage}
+% اگر پایان‌نامه شما دو رو است برای تنظیمات هدر بایستی دو خط بالا را کامنت و خط دو خط پایین را فعال کنید. در چاپ کتابچه دقت کنید تا شماره صفحه همیشه در بیرونی ترین حالت کاغذ قرار گیرد برای این کار می توانید جای \leftmarkو \thepage را با هم عوض کنید و یا تنظیمات زوج و فرد و راست و چپ را تغییر دهید
+% \fancyhead[LE,RO]{\leftmark}
+% \fancyhead[RE,LO]{\thepage}
+% چنانچه مقدمه شما جزئی از فصل یک نیست می توانید خط زیر را از حالت کامنت خارج نمایید 
+\input{./chapters/preface} 
+\input{./chapters/chapter1}
+\input{./chapters/chapter2}
+\input{./chapters/chapter3}
+\input{./chapters/chapter4}
+\input{./chapters/chapter5}
+%   \input{./chapters/chapter6}
+%با تکرار و اضافه کردن خطوط فوق می توانید فصل اضافه کنید .فایلهای تک درون فولد chapter فایلهای مربوط به هر کدام از فصل هاست.به ساختار آنها و labelها دقت کنید.
+%===================================== Print Bibs & Glossaries
+\normalsize
+\small
+% خطوط زیر برای اضافه نمودن و تفکیک فصول پیوست است
+\appendix
+ \include{./chapters/appendix1}
+%  \include{./chapters/appendix2}
+% \include{./chapters/appendix3}
+% اگر لغت‌نامه نمی خواهید خط زیر را کامنت کنید
+\printglossary
+% اگر فهرست اختصارات نمی‌خواهید خط زیر را کامنت کنید
+\printabbreviation
+% ================================================= biblography
+% خط زیر استایل مراجع را مشخص می کند چند استایل دیگر نیز معرفی شده اند
+{\bibliographystyle{./styles/iut-fa.bst}
+% {\bibliographystyle{ieeetr-fa.bst}
+% {\bibliographystyle{plainurl}
+% {\bibliographystyle{plain-fa}
+% \setLTRbibitems
+% \resetlatinfont
+% خطوط زیر هر جا قرار بگیرند همانجا مراجع چاپ می شوند
+\DefaultMathsDigits
+\begin{singlespace}
+\bibliography{./chapters/bib}
+\end{singlespace}
+% ========================================== Latin Abstract
+\input{./chapters/latinmainbody}
+\input{./chapters/defpagelatin}
+\begin{latin}
+\makelatinabstract
+\input{./chapters/latinabstract}
+\makelatindeftitle
+\makelatintitle
+\end{latin}
+%---------------------------------------------------------------------------------------------------
+\end{document}
+
+ 

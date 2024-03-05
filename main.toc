@@ -1,0 +1,53 @@
+\contentsline {chapter}{سپاس‌گزاری}{شش}{chapter*.3}%
+\contentsline {chapter}{فهرست تصاویر}{ده}{chapter*.5}%
+\contentsline {chapter}{فهرست جداول}{یازده}{chapter*.6}%
+\contentsline {chapter}{فهرست نمادها }{دوازده}{chapter*.7}%
+\contentsline {chapter}{چکیده}{سیزده}{chapter*.8}%
+\contentsline {chapter}{مقدّمه}{1}{chapter*.9}%
+\contentsline {chapter}{فصل\nobreakspace {}\numberline {1}نصب \lr {texlive}}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}دانلود آخرین نسخه}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}نصب روی ویندوز}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}نصب در لینوکس}{5}{subsection.1.1.2}%
+\contentsline {subsubsection}{نصب به صورت \lr {command Line}}{5}{section*.16}%
+\contentsline {subsection}{\numberline {1.1.3}نصب در مکینتاش}{6}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}نصب ویرایشگر}{7}{section.1.2}%
+\contentsline {subsubsection}{ویرایشگر \lr {TeXStudio}}{7}{section*.17}%
+\contentsline {subsubsection}{ ویراشگر \lr {TeXmaker}}{8}{section*.20}%
+\contentsline {section}{\numberline {1.3}ساختار فایل‌های لاتک}{9}{section.1.3}%
+\contentsline {chapter}{فصل\nobreakspace {}\numberline {2}فونت و نویسه‌ها}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}انواع فونت‌ها در رایانه}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}فونت در \lr {xepersian}}{13}{section.2.2}%
+\contentsline {section}{\numberline {2.3}اندازه فونت}{13}{section.2.3}%
+\contentsline {subsubsection}{گام نخست}{14}{section*.27}%
+\contentsline {subsubsection}{گام دوم}{15}{section*.28}%
+\contentsline {subsubsection}{گام سوم}{16}{section*.30}%
+\contentsline {section}{\numberline {2.4}فونت فارسی و انگلیسی}{16}{section.2.4}%
+\contentsline {section}{\numberline {2.5}نحوه تعریف فونت های دیگر}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.6}فونت‌های مورد نیاز قالب \lr {iut-thesis}}{17}{section.2.6}%
+\contentsline {chapter}{فصل\nobreakspace {}\numberline {3}نمونه‌ها و ابزار‌ها}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}مقدمه ای بر استفاده از بسته‌ها}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}فرمولها}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}درج اشکال و تصاویر}{25}{section.3.3}%
+\contentsline {section}{\numberline {3.4}مرجع‌دهی تصویر}{26}{section.3.4}%
+\contentsline {section}{\numberline {3.5}انواع لیست در\lr {LaTeX} }{28}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}لیست بدون ترتیب }{28}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}لیست های دارای ترتیب }{29}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}ایجاد لیست با عنوان دلخواه }{30}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}نوشتن جداول}{30}{section.3.6}%
+\contentsline {section}{\numberline {3.7}قالب دهی به جدول و تعریف آن به صورت شناور}{31}{section.3.7}%
+\contentsline {section}{\numberline {3.8}تعریف جدول به صورت شناور و نحوه ارجاع دادن به آن}{32}{section.3.8}%
+\contentsline {section}{\numberline {3.9}محیط های ریاضی}{35}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1} قضیه انتخاب}{35}{subsection.3.9.1}%
+\contentsline {section}{\numberline {3.10}\lr {tikz} و استفاده از آن}{35}{section.3.10}%
+\contentsline {chapter}{فصل\nobreakspace {}\numberline {4}فهرست‌ها}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}فهرست مطالب ،اشکال و جداول}{39}{section.4.1}%
+\contentsline {section}{\numberline {4.2} لغتنامه و فهرست اختصارات}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}مدیریت مراجع در لاتک}{40}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1} مدیریت مراجع با \lr {Bib\LRE {\TeX }} }{40}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}سبک‌های فعلی قابل استفاده در زی‌پرشین}{41}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3} نحوه استفاده از سبک‌های فارسی}{42}{subsection.4.3.3}%
+\contentsline {chapter}{پیوست\nobreakspace {}\numberline {الف}نمونه‌هایی برای وارد کردن کد برنامه‌ها}{45}{appendix.Alph1}%
+\contentsline {chapter}{واژه‌نامه انگلیسی به فارسی}{48}{section*.41}%
+\contentsline {chapter}{واژه‌نامه فارسی به انگلیسی}{49}{section*.48}%
+\contentsline {chapter}{\rl {فهرست اختصارات}}{50}{section*.54}%
+\contentsline {chapter}{کتاب‌نامه}{51}{appendix*.58}%

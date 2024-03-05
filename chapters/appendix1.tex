@@ -1,0 +1,127 @@
+% !TEX TS-program = XeLaTeX
+% !TeX root=main.tex
+% دستورات زیر باید در اولین فایل پیوست باشند. آنها را حذف نکنید!    
+\chapter{نمونه‌هایی برای وارد کردن کد برنامه‌ها}\label{App:RefMan1}
+\thispagestyle{empty}
+%==================================================================
+نمونه کد \lr{C}
+\begin{latin}
+\begin{lstlisting}[style=CStyle]
+#include <stdio.h>
+int main(void)
+{
+   printf("Hello World!"); 
+}
+\end{lstlisting}
+\end{latin}
+نمونه کد بش:
+\begin{latin}
+\begin{lstlisting}[style=Mybash]
+ ~$ sudo apt-get update & sudo apt-get upgrade
+ ~$ sudo apt-get install python3 python3-numpy python3-scipy
+ ~$ chmod +x fplo2wannier
+\end{lstlisting}
+\end{latin}
+نمونه کد پایتون:
+\begin{latin}
+\begin{lstlisting}[style=Mypython]
+ #!/usr/bin/python3 -u
+from sys import argv
+arg=[int(x) for x in argv[1:4]]
+xtel=1.0/arg[0]
+ytel=1.0/arg[1]
+ztel=1.0/arg[2]
+x,y,z=0.0,0.0,0.0
+with open("./wankp","w") as f:
+	f.write("%s f 1 1 \n"%(arg[0]*arg[1]*arg[2]))
+	
+for z in range(arg[2]):
+	for y in range(arg[1]):
+		for x in range(arg[0]):
+			with open("./=.kp","a") as f:
+				f.write("%s %s %s\n"%(repr(x*xtel).ljust(20),
+                repr(y*ytel).ljust(20),repr(z*ztel).ljust(20)))
+				print("%s %s %s\n"%(repr(x*xtel).ljust(20),
+                repr(y*ytel).ljust(20),repr(z*ztel).ljust(20)))
+\end{lstlisting}
+\end{latin}
+% \end{landscape}
+نمونه کد برای زبان جولیا
+\begin{latin}
+\begin{lstlisting}[style=julia]
+#= This is a code sample for the Julia language
+(adapted from http://julialang.org) =#
+function mandel(z)
+    c = z
+    maxiter = 80
+    for n = 1:maxiter
+        if abs(z) > 2
+            return n-1
+        end
+        z = z^2 + c
+    end
+    return maxiter
+end
+
+function helloworld()
+    println("Hello, World!") # Bye bye, MATLAB!
+end
+
+function randmatstat(t)
+    n = 5
+    v = zeros(t)
+    w = zeros(t)
+    for i = 1:t
+        a = randn(n,n)
+        b = randn(n,n)
+        c = randn(n,n)
+        d = randn(n,n)
+        P = [a b c d]
+        Q = [a b; c d]
+        v[i] = trace((P.'*P)^4)
+        w[i] = trace((Q.'*Q)^4)
+    end
+    std(v)/mean(v), std(w)/mean(w)
+end
+\end{lstlisting}
+\end{latin}
+نمونه کد برای کد متلب
+\begin{latin}
+ \begin{lstlisting}[style=mymatlab]
+  n = 40;
+y = randi([500, 600], 1, n);
+a = zeros(n,1);
+
+% PARFOR-Loop (no workers)
+if matlabpool('size') > 0, matlabpool close, end
+
+p1 = Par(n);
+
+parfor id = 1:n
+  Par.tic;
+  a(id) = max(svd(rand(y(id))));
+  p1(id) = Par.toc;
+end
+
+stop(p1);
+
+plot(p1);
+
+% Plot using optional colormap input
+% plot(p1,@bone);
+ \end{lstlisting}
+\end{latin}
+نمونه کد برای فرترن
+\begin{latin}
+ \begin{lstlisting}[style=myfortran]
+! Der folgende Fortran-Code ist bei Wikipedia geklaut.
+SUBROUTINE test( Argument1, Argument2, Argument3 )
+   REAL,              INTENT(IN) :: Argument1
+   CHARACTER(LEN= *), INTENT(IN) :: Argument2
+   INTEGER,           INTENT(IN), OPTIONAL :: Argument3
+   ! This makes sense
+END SUBROUTINE
+\end{lstlisting}
+\end{latin}
+
+
